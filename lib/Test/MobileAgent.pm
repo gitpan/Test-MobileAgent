@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base 'Exporter';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our @EXPORT    = qw/test_mobile_agent/;
 our @EXPORT_OK = qw/test_mobile_agent_env
@@ -47,7 +47,7 @@ sub _find_vendor {
   if ($agent =~ /^[a-z]+$/) {
     return (ucfirst($agent), '');
   }
-  elsif ($agent =~ /^\[a-z]+\./) {
+  elsif ($agent =~ /^[a-z]+\./) {
     my ($vendor, $type) = split /\./, $agent;
     $vendor = ucfirst $vendor;
     return ($vendor, $type);

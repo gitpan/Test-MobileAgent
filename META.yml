@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Test-MobileAgent
-version:            0.01
+version:            0.02
 abstract:           set environmental variables to mock HTTP::MobileAgent
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>
